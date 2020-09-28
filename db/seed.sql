@@ -2,6 +2,6 @@ INSERT INTO recipes(user_name,recipe_name,ingredients,instructions,cook_time,pre
 
 VALUES 
 (
-	"need to put example values here", 
+	"need to put example values here" 
 	
-),
+)
