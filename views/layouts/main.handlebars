@@ -2,44 +2,55 @@
 <html lang="en">
 
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chef's Table</title>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
 
+    <!-- Title -->
+    <title>Save that Recipe!</title>
+
+    <!-- CSS -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/style.css">
 </head>
 
 <body>
     <div class="jumbotron jumbotron-fluid mb-0">
         <div class="container">
-            <h1 class="display-4"></i>Chef's Table<i class="fas fa-lemon fa-1x"></i></h1>
+            <h1 class="display-4"></i>Save that Recipe!<i class="fas fa-utensils fa-1x"></i></h1>
         </div>
     </div>
 
-    {{ nav-block }}
+    {{> nav-block }}
     {{{ body }}}
 
     <footer>  
         <div class="container">
-         &copy;Chef's Table 2020<br>
+            &copy;Save that Recipe! 2020<br>
         </div>
     </footer>
-
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <!-- Scripts -->
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!-- Chosen -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
     <!-- Font-awesome -->
-    <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <!-- Custom -->
+    <script src="https://kit.fontawesome.com/8bc186352b.js" crossorigin="anonymous"></script>
+    <!-- js -->
     <script type="text/javascript" src="/public/js/script.js"></script>
-    {{!-- <script type="text/javascript" src="/js/form.js"></script> --}}
+
 
 </body>
 
