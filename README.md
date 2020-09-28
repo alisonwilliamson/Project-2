@@ -1,4 +1,4 @@
-# Project 2: Save that Recipe!
+# Project 2: Chef's Table!
 
 Save that recipe is an app that allows you to save your favorite recipes in one spot.
 

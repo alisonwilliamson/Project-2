@@ -1,0 +1,312 @@
+body {
+    background-color: whitesmoke;
+}
+
+a .card-body{
+    background: rgba(255, 255, 255, 1);
+    color: #212529;
+    text-decoration: none;
+}
+a:hover .card-body { 
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none; 
+}
+
+/* a .card-body {
+
+} */
+
+.jumbotron {
+    background-image: url("/images/garlic.jpeg");
+    background-size: cover;
+    position: relative;
+}
+
+.btn:focus, 
+.btn:active,
+.btn:hover, 
+.form-control:hover, 
+.form-control:focus,
+.form-control:active {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    border: 1px solid slategray;
+    box-shadow: none;
+}
+
+footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    /* background: rgb(204, 187, 238); */
+    height: 90px; 
+    flex-shrink: 0;
+  }
+
+.addRecipeForm {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid white;
+}
+
+.addRecipeForm::after {
+    content: "";
+    background: url("/images/cheeseboard.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.giveMeSpace {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.noUglyBlue {
+    background-color: white;
+    color: black
+}
+
+.logInMe {
+    position: relative;
+    border: 1px solid white;
+    /* background-color: whitesmoke; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    /* padding-left: 400px; */
+}
+
+.logInMe::after {
+    content: "";
+    background: url("/images/spices.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.card {
+    background: transparent;
+}  
+
+.recipeInMe {
+    position: relative;
+    border: 1px solid white;
+    /* background-color: whitesmoke; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+.recipeInMe::after {
+    content: "";
+    background: url("/images/tomatoes.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+  .navbar { padding: 0; }
+  .nav-item { padding: 0.25rem 1rem; }
+  .alert {
+     display: none;
+  }
+
+.blackBetty {
+    color: whitesmoke;
+    background-color: black;
+}
+
+#searchMe {
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #ced4da;
+    
+}
+
+#searchMe:hover {
+    color: black;
+    border: 1px solid slategray;
+}
+
+#iAmCentered {
+    display: flex;
+    justify-content: center;
+}
+
+.putAUserInMe {
+    position: relative;
+    border: 1px solid white;
+    /* background-color: whitesmoke; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+.putAUserInMe::after {
+    content: "";
+    background: url("/images/coloredpowder.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+#myFooter {
+    background-color: #373a48;
+    color:white;
+  }
+  
+  #myFooter .footer-copyright{
+    background-color: #383737;
+    padding-top:3px;
+    padding-bottom:3px;
+    text-align: center;
+  }
+  
+  #myFooter .footer-copyright p{
+    margin:10px;
+    color: #ccc;
+  }
+  
+  #myFooter ul{
+    list-style-type: none;
+      padding-left: 0;
+      line-height: 1.7;
+  
+  }
+  
+  #myFooter h5{
+    font-size: 18px;
+      color: white;
+      font-weight: bold;
+      margin-top: 30px;
+  }
+  
+  #myFooter a{
+    color:#d2d1d1;
+    text-decoration: none;
+  }
+  
+  #myFooter a:hover, #myFooter a:focus{
+    text-decoration: none;
+    color:white;
+  }
+  
+  #myFooter .myCols{
+    text-align: center;
+    background-color: #373a48;
+  }
+  #myFooter .myColsrow{
+    background-color: #373a48;
+    width: 100%;
+    margin-top: -20px;
+  }
+  
+  #myFooter .social-networks{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+    background-color: #373a48;
+    
+  }
+  
+  #myFooter .social-networks a{
+      font-size: 32px;
+      margin-right: 5px;
+      margin-left: 5px;
+      color: #f9f9f9;
+      padding: 10px;
+      transition: 0.2s;
+  }
+  
+  #myFooter .social-networks a:hover{
+    text-decoration: none;
+  
+  }
+  
+  #myFooter .facebook:hover{
+    color:#0077e2;
+  }
+  
+  #myFooter .google:hover{
+    color:#ef1a1a;
+  }
+  
+  #myFooter .twitter:hover{
+    color: #00aced;
+  }
+  
+  @media screen and (max-width: 767px){
+    #myFooter {
+      text-align: center;
+    }
+  }
+  
+  
+  
+  /* CSS used for positioning the footers at the bottom of the page. */
+  /* You can remove this. */
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  #myFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #373a48;
+  }
+  
+  
+  
+  
+  /**/
+  #myFooter{
+    flex: 0 0 auto;
+      -webkit-flex: 0 0 auto;
+  }
+  
+  .glyphicon-heart , .glyphicon-heart-empty {
+      font-size: 25px;
+      font-weight: bold;
+  }
+
+  .w-100 {
+    width: 100% !important;
+    height: 75vh;
+  }
