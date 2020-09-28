@@ -12,16 +12,6 @@ a:hover .card-body {
     text-decoration: none; 
 }
 
-/* a .card-body {
-
-} */
-
-.jumbotron {
-    background-image: url("/images/garlic.jpeg");
-    background-size: cover;
-    position: relative;
-}
-
 .btn:focus, 
 .btn:active,
 .btn:hover, 
@@ -34,17 +24,6 @@ a:hover .card-body {
     border: 1px solid slategray;
     box-shadow: none;
 }
-
-footer {
-    padding: 30px 0;
-    clear: both;
-    font-size: 15px;
-    color: #ffffff;
-    text-align: center;
-    /* background: rgb(204, 187, 238); */
-    height: 90px; 
-    flex-shrink: 0;
-  }
 
 .addRecipeForm {
     margin-top: 50px;
@@ -66,16 +45,6 @@ footer {
     position: absolute;
     z-index: -1;   
   }
-
-.giveMeSpace {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.noUglyBlue {
-    background-color: white;
-    color: black
-}
 
 .logInMe {
     position: relative;
@@ -128,28 +97,6 @@ footer {
     z-index: -1;   
 }
 
-  .navbar { padding: 0; }
-  .nav-item { padding: 0.25rem 1rem; }
-  .alert {
-     display: none;
-  }
-
-.blackBetty {
-    color: whitesmoke;
-    background-color: black;
-}
-
-#searchMe {
-    background-color: white;
-    border-radius: 3px;
-    border: 1px solid #ced4da;
-    
-}
-
-#searchMe:hover {
-    color: black;
-    border: 1px solid slategray;
-}
 
 #iAmCentered {
     display: flex;

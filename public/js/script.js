@@ -1,19 +1,14 @@
-// $(".navbar-nav .nav-item").on("click", function() {
-//     $(".nav-item").removeClass("active");
-//     console.log($(this));
-// });
-
- // initialize sidenav using materialize js
- $(document).ready(function () {
+// initialize sidenav using materialize js
+$(document).ready(function () {
     $(".sidenav").sidenav();
-  });
-  
-  // initialize slider using materialize js
-  const slider = document.querySelector(".slider");
-  M.Slider.init(slider, {
+});
+
+// initialize slider using materialize js
+const slider = document.querySelector(".slider");
+M.Slider.init(slider, {
     indicators: false,
     height: 500,
-  });
+});
 
 
 
@@ -136,7 +131,7 @@ $(document).ready(function () {
         );
     };
 
-    //this is for ingredients being added
+    //ingredients to be added
     var ingredientsArray = [];
 
     function addIngredient(event) {

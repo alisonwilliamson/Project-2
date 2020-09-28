@@ -1,6 +1,6 @@
 <br>
 
-<!-- This is the add recipe page -->
+<!-- add recipe page -->
 <div class="container addRecipeForm">
     <form class="giveMeSpace">
         <div class="form-row">
@@ -14,7 +14,6 @@
             </div>
         </div>
 
-        <!-- This may have to be created dynamically so that you keep adding more ingredients -->
         <div class="form-row">
             <div class="form-group col-md-2">
                 <label for="inputAmount">Amount:</label>
@@ -39,7 +38,7 @@
                 <input type="text" class="form-control" id="inputIngredient" placeholder="Enter 1 ingredient" />
             </div>
         </div>
-        <button type="submit" id="addIngredient" class="btn noUglyBlue">Add Ingredient!</button>
+        <button type="submit" id="addIngredient" class="btn">Add Ingredient!</button>
         <br>
         <hr>
         <div class="showIngredients">
@@ -48,7 +47,7 @@
         </div>
         <br>
         <hr>
-        <!-- This may have to be created dynamically so that you keep adding more ingredients -->
+    
 
         <div class="form-group">
             <label for="inputInstructions">Instructions:</label>
@@ -57,16 +56,16 @@
         <div class="form-row">
             <div class="form-group col-md-2">
                 <label for="inputCook">Cook Time:</label>
-                <input type="text" class="form-control" id="inputCook" placeholder="Required:Must be a number." />
+                <input type="text" class="form-control" id="inputCook" placeholder="Must be a number!" />
             </div>
 
             <div class="form-group col-md-2">
                 <label for="inputPrep">Prep Time:</label>
-                <input type="text" class="form-control" id="inputPrep" />
+                <input type="text" class="form-control" id="inputPrep" placeholder="Must be a number!" />
             </div>
         </div>
 
-        <button type="submit" id="recipe-form" class="btn noUglyBlue">
+        <button type="submit" id="recipe-form" class="btn">
             Save Recipe!
         </button>
     </form>
