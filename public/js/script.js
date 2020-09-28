@@ -1,8 +1,3 @@
-// $(".navbar-nav .nav-item").on("click", function() {
-//     $(".nav-item").removeClass("active");
-//     console.log($(this));
-// });
-
 // initialize sidenav using materialize js
 $(document).ready(() => {
   $(".sidenav").sidenav();
