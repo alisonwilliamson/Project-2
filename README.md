@@ -10,9 +10,9 @@ No more printing out a ton or recipes or
 scrolling through multiple websites to find
 that perfect recipe you're looking for.
 
-![Screenshot of application]()
+![Screenshot of application](public\images\Screenshot_App.png)
 
-Link to application:()
+Link to application:(<https://sheltered-beyond-37589.herokuapp.com/view-recipe>)
 
 ## Technologies used
 
