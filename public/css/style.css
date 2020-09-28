@@ -12,6 +12,10 @@ a:hover .card-body {
     text-decoration: none; 
 }
 
+/* a .card-body {
+
+} */
+
 .btn:focus, 
 .btn:active,
 .btn:hover, 
@@ -24,6 +28,7 @@ a:hover .card-body {
     border: 1px solid slategray;
     box-shadow: none;
 }
+
 
 .addRecipeForm {
     margin-top: 50px;
@@ -45,6 +50,12 @@ a:hover .card-body {
     position: absolute;
     z-index: -1;   
   }
+
+.giveMeSpace {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 
 .logInMe {
     position: relative;
@@ -96,6 +107,12 @@ a:hover .card-body {
     position: absolute;
     z-index: -1;   
 }
+
+  .navbar { padding: 0; }
+  .nav-item { padding: 0.25rem 1rem; }
+  .alert {
+     display: none;
+  }
 
 
 #iAmCentered {

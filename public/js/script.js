@@ -105,7 +105,6 @@ $(document).ready(function () {
                 })
     });
 
-    //need a validation that they have signed in before running function
     function recipeSubmit(event) {
         event.preventDefault();
 
