@@ -1,6 +1,6 @@
 # Project 2: Chef's Table!
 
-Save that recipe is an app that allows you to save your favorite recipes in one spot.
+Chef's Table! is an app that allows you to save your favorite recipes in one spot.
 
 ## User Story
 
@@ -54,6 +54,6 @@ Link to application:()
 
 * Alison Williamson @alisonwilliamson
 
-* Dhurba Gc @dhurba844
+<!-- * Dhurba Gc @dhurba844 -->
 
-* Scott Lagas @Scottiss
+<!-- * Scott Lagas @Scottiss -->
