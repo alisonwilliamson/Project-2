@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var Recipe = sequelize.define(
+  const Recipe = sequelize.define(
     "Recipe",
     {
       user_name: {
