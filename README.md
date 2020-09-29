@@ -12,7 +12,7 @@ that perfect recipe you're looking for.
 
 ![Screenshot of application](public/images/Screenshot_App.jpg)
 
-Link to application:(<https://sheltered-beyond-37589.herokuapp.com/view-recipe>)
+Link to application:(<https://sheltered-beyond-37589.herokuapp.com/>)
 
 ## Technologies used
 
