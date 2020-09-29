@@ -20,7 +20,7 @@ module.exports = function(app) {
       res.send("Fields Cannot Be Empty")
     }
     else {
-    db.Users.findOne({where:{user_name: usernameInput}}).then(function(data){
+    db.users.findOne({where:{user_name: usernameInput}}).then(function(data){
       if (data){
         console.log("Username already exist")
         res.send("Username already exists")
@@ -31,7 +31,7 @@ module.exports = function(app) {
       console.log(data)
     bcrypt.genSalt(saltRounds, function(err, salt) {
       bcrypt.hash(userPW, salt, function(err, hash) {
-        db.Users.create({
+        db.users.create({
           user_name: usernameInput,
           password: hash
         }).then(function(data) {
@@ -46,7 +46,7 @@ module.exports = function(app) {
   //login page: storing and comparing username and password,and redirecting to / page after login
   app.post("/users/login", function(req, res) {
     var userPW = req.body.password;
-    db.Users.findOne({
+    db.users.findOne({
       where: {
         user_name: req.body.user_name
       }

@@ -15,8 +15,7 @@ module.exports = function (app) {
 
     // Routes for the Recipe Table
     app.get("/view-recipe", function (req, res) {
-        db.Recipe
-        .findAll({})
+        db.recipe.findAll({})
         .then(function(data){
             var handlebarsObj = {recipes:[]};
             for (let i = 0; i < data.length; i++) {
@@ -34,7 +33,7 @@ module.exports = function (app) {
     app.get("/api/user/:user_name", function (req, res) {
         let username = req.params.user_name
         // console.log(username);
-        db.Recipe.findAll({
+        db.recipe.findAll({
             where: {
                 user_name: username
             }
@@ -52,13 +51,11 @@ module.exports = function (app) {
 
     // GET route for retrieving single recipe
     app.get("/api/recipe/:recipe_name", function (req, res) {
-        db.Recipe.findOne({
+        db.recipe.findOne({
             where: {
                 recipe_name: req.params.recipe_name
             }
         }).then(function (data) {
-            // console.log(data.ingredients);
-            // res.json(data);
             var handlebarsObj = data.dataValues
             // console.log(handlebarsObj)
             res.render("recipe", handlebarsObj)
@@ -67,11 +64,8 @@ module.exports = function (app) {
     // POST route for saving a new recipe
 
     app.post("/api/recipe", function (req, res) {
-        // Commented this out for now until I get passport to work
-        //  passport.authenticate('local', { successRedirect: '/add-recipe',
-        // failureRedirect: '/users/login',})
 
-        db.Recipe.create({
+        db.recipe.create({
             user_name: req.body.user_name,
             recipe_name: req.body.recipe_name,
             ingredients: req.body.ingredients,
@@ -85,7 +79,7 @@ module.exports = function (app) {
 
     // DELETE route for users to delete recipes
     app.delete("/api/recipe/:id", function (req, res) {
-        db.Recipe.destroy({
+        db.recipe.destroy({
             where: { id: req.params.id }
         }).then(function (data) {
             res.json(data);
@@ -93,12 +87,10 @@ module.exports = function (app) {
     });
 
     app.put("/api/recipe", function (req, res) {
-        db.Recipe.update(req.body, {
+        db.recipe.update(req.body, {
             where: { recipe_name: req.body.recipe_name }
         }).then(function (data) {
             res.json(data);
         });
     });
-    // passport.authenticate('local', { successRedirect: '/add-recipe',
-    // failureRedirect: '/users/login',}),
 };
