@@ -2,26 +2,26 @@
 
 <!-- add recipe page -->
 <div class="container addRecipeForm">
-    <form class="giveMeSpace">
+    <form class="spacing">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputRecipeName">Recipe Name:</label>
                 <input type="text" class="form-control" id="inputRecipeName" placeholder="Required!" />
             </div>
             <div class="form-group col-md-6">
-                <label for="inputUserName">Created by:</label>
-                <input type="text" class="form-control" id="inputUserName" placeholder="Required!" />
+                <label for="addUserName">Created by:</label>
+                <input type="text" class="form-control" id="addUserName" placeholder="Required!" />
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-2">
-                <label for="inputAmount">Amount:</label>
-                <input type="text" class="form-control" id="inputAmount" placeholder="Enter a number" />
+                <label for="amount">Amount:</label>
+                <input type="text" class="form-control" id="amount" placeholder="Enter a number" />
             </div>
             <div class="form-group col-md-2">
-                <label for="inputAmount">Measurement:</label>
-                <select id="inputMeasurement" class="form-control">
+                <label for="amount">Measurement:</label>
+                <select id="measurement" class="form-control">
                     <option selected></option>
                     <option>Teaspoon(s)</option>
                     <option>Tablespoon(s)</option>
@@ -34,11 +34,11 @@
                 </select>
             </div>
             <div class="form-group col-md-8">
-                <label for="inputIngredient">Ingredient:</label>
-                <input type="text" class="form-control" id="inputIngredient" placeholder="Enter 1 ingredient" />
+                <label for="ingredient">Ingredient:</label>
+                <input type="text" class="form-control" id="ingredient" placeholder="Enter 1 ingredient" />
             </div>
         </div>
-        <button type="submit" id="addIngredient" class="btn">Add Ingredient!</button>
+        <button type="submit" id="addAnIngredient" class="btn">Add Ingredient!</button>
         <br>
         <hr>
         <div class="showIngredients">
@@ -65,13 +65,13 @@
             </div>
         </div>
 
-        <button type="submit" id="recipe-form" class="btn">
+        <button type="submit" id="recipeForm" class="btn">
             Save Recipe!
         </button>
     </form>
 </div>
 
-<div class="modal fade" id="showMeTheModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+<div class="modal fade" id="showModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">

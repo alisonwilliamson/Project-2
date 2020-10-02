@@ -1,44 +1,44 @@
-    <div class="container">
-    <div class="alerts row">
-        <div class="col">
-        <div class="alert alert-info text-center" id="usernameAlert" role="alert">
-            Username Does Not Exist!
-        </div>
-        <div class="alert alert-info text-center" id="usernameExist" role="alert">
-            Username Already Exists!
-        </div>
-        <div class="alert alert-info text-center" id="fieldsEmpty" role="alert">
-            Username and Password Fields Cannot Be Empty!
-        </div>
-        <div class="alert alert-info text-center" id="passwordAlert" role="alert">
-            Incorrect Username and Password Combination
-        </div>
-        <div class="alert alert-success text-center" id= "signUpAlert" role="alert">
-            Sign Up Successful!
-        </div>        
-        <div class="alert alert-success text-center" id= "successfulAlert" role="alert">
-            Login Successful!
-        </div>
-        </div>
+<div class="container">
+<div class="alerts row">
+    <div class="col">
+    <div class="alert alert-info text-center" id="notExisting" role="alert">
+        Username does not exist!
+    </div>
+    <div class="alert alert-info text-center" id="existingUsername" role="alert">
+        Username already exists!
+    </div>
+    <div class="alert alert-info text-center" id="emptyFields" role="alert">
+        Username and password fields cannot be empty!
+    </div>
+    <div class="alert alert-info text-center" id="incorrectAlert" role="alert">
+        Incorrect username and password combination!
+    </div>
+    <div class="alert alert-success text-center" id= "signUpAlert" role="alert">
+        Sign up successful!
+    </div>        
+    <div class="alert alert-success text-center" id= "successAlert" role="alert">
+        Login successful!
     </div>
     </div>
+</div>
+</div>
 
 
-<div class="container logInMe">
-<div class="row" id="iAmCentered">
+<div class="container loginPage">
+<div class="row" id="centered">
     <div class="col-md-6">
-    <label for="inputUser">User Name:</label>
-    <input type="user_name" name="user_name" class="form-control" id="inputUser" aria-describedby="emailHelp"
+    <label for="addUsername">User Name:</label>
+    <input type="user_name" name="user_name" class="form-control" id="addUsername" aria-describedby="emailHelp"
         placeholder="johnsmith@gmail.com" />
 </div>
 </div>
-<div class="row" id="iAmCentered">
+<div class="row" id="centered">
     <div class="col-md-6">
-    <label for="inputPassword1">Password:</label>
-    <input type="password" name="password" class="form-control" id="inputPassword1" placeholder="password" />
+    <label for="createPassword">Password:</label>
+    <input type="password" name="password" class="form-control" id="createPassword" placeholder="password" />
     <br>
-<button type="signIn" class="btn noUglyBlue" id="signIn">Sign In</button>
-<button type="signUp" class="btn noUglyBlue" id="signUp">Sign Up</button>
+<button type="login" class="btn" id="login">Sign In</button>
+<button type="createAccount" class="btn" id="createAccount">Sign Up</button>
 </div>
 </div>
 </div>

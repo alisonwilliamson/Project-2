@@ -12,10 +12,6 @@ a:hover .card-body {
     text-decoration: none; 
 }
 
-/* a .card-body {
-
-} */
-
 .btn:focus, 
 .btn:active,
 .btn:hover, 
@@ -51,23 +47,21 @@ a:hover .card-body {
     z-index: -1;   
   }
 
-.giveMeSpace {
+.spacing {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 
-.logInMe {
+.loginPage {
     position: relative;
     border: 1px solid white;
-    /* background-color: whitesmoke; */
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 50px;
-    /* padding-left: 400px; */
 }
 
-.logInMe::after {
+.loginPage::after {
     content: "";
     background: url("/images/spices.jpg");
     background-size: cover;
@@ -85,16 +79,15 @@ a:hover .card-body {
     background: transparent;
 }  
 
-.recipeInMe {
+.favoriteRecipes {
     position: relative;
     border: 1px solid white;
-    /* background-color: whitesmoke; */
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 50px;
 }
 
-.recipeInMe::after {
+.favoriteRecipes::after {
     content: "";
     background: url("/images/tomatoes.jpg");
     background-size: cover;
@@ -115,12 +108,12 @@ a:hover .card-body {
   }
 
 
-#iAmCentered {
+#centered {
     display: flex;
     justify-content: center;
 }
 
-.putAUserInMe {
+.favoritesCard {
     position: relative;
     border: 1px solid white;
     /* background-color: whitesmoke; */
@@ -129,7 +122,7 @@ a:hover .card-body {
     padding: 50px;
 }
 
-.putAUserInMe::after {
+.favoritesCard::after {
     content: "";
     background: url("/images/coloredpowder.jpeg");
     background-size: cover;
@@ -143,58 +136,58 @@ a:hover .card-body {
     z-index: -1;   
 }
 
-#myFooter {
+#footer {
     background-color: #373a48;
     color:white;
   }
   
-  #myFooter .footer-copyright{
+  #footer .footer-copyright{
     background-color: #383737;
     padding-top:3px;
     padding-bottom:3px;
     text-align: center;
   }
   
-  #myFooter .footer-copyright p{
+  #footer .footer-copyright p{
     margin:10px;
     color: #ccc;
   }
   
-  #myFooter ul{
+  #footer ul{
     list-style-type: none;
       padding-left: 0;
       line-height: 1.7;
   
   }
   
-  #myFooter h5{
+  #footer h5{
     font-size: 18px;
       color: white;
       font-weight: bold;
       margin-top: 30px;
   }
   
-  #myFooter a{
+  #footer a{
     color:#d2d1d1;
     text-decoration: none;
   }
   
-  #myFooter a:hover, #myFooter a:focus{
+  #footer a:hover, #footer a:focus{
     text-decoration: none;
     color:white;
   }
   
-  #myFooter .myCols{
+  #footer .myCols{
     text-align: center;
     background-color: #373a48;
   }
-  #myFooter .myColsrow{
+  #footer .myColsrow{
     background-color: #373a48;
     width: 100%;
     margin-top: -20px;
   }
   
-  #myFooter .social-networks{
+  #footer .social-networks{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 38px;
@@ -202,7 +195,7 @@ a:hover .card-body {
     
   }
   
-  #myFooter .social-networks a{
+  #footer .social-networks a{
       font-size: 32px;
       margin-right: 5px;
       margin-left: 5px;
@@ -211,33 +204,29 @@ a:hover .card-body {
       transition: 0.2s;
   }
   
-  #myFooter .social-networks a:hover{
+  #footer .social-networks a:hover{
     text-decoration: none;
   
   }
   
-  #myFooter .facebook:hover{
+  #footer .facebook:hover{
     color:#0077e2;
   }
   
-  #myFooter .google:hover{
+  #footer .google:hover{
     color:#ef1a1a;
   }
   
-  #myFooter .twitter:hover{
+  #footer .twitter:hover{
     color: #00aced;
   }
   
   @media screen and (max-width: 767px){
-    #myFooter {
+    #footer {
       text-align: center;
     }
   }
-  
-  
-  
-  /* CSS used for positioning the footers at the bottom of the page. */
-  /* You can remove this. */
+ 
   html {
     position: relative;
     min-height: 100%;
@@ -246,31 +235,11 @@ a:hover .card-body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
   }
-  #myFooter {
+  #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
     height: 60px;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 60px;
     background-color: #373a48;
-  }
-  
-  
-  
-  
-  /**/
-  #myFooter{
-    flex: 0 0 auto;
-      -webkit-flex: 0 0 auto;
-  }
-  
-  .glyphicon-heart , .glyphicon-heart-empty {
-      font-size: 25px;
-      font-weight: bold;
-  }
-
-  .w-100 {
-    width: 100% !important;
-    height: 75vh;
   }

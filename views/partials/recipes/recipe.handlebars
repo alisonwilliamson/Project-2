@@ -1,4 +1,4 @@
-<div class="container recipeInMe">
+<div class="container favoriteRecipes">
 <h1>{{recipe_name}}</h1><p>Recipe by: {{user_name}} </p>
 <hr>
 
@@ -8,8 +8,7 @@
 <h2>Ingredients:</h2>
 <hr>
 <ul>
-    <!-- Use javascript to split the string by comma to post -->
-     {{#each ingredients}}
+    {{#each ingredients}}
     <li>{{this}}</li>
     {{/each}}
 </ul>

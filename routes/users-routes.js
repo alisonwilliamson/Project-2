@@ -1,18 +1,15 @@
 var db = require("../models");
-// Dependencies
 var bcrypt = require("bcrypt");
 
 // Variables for bcrypt
 var saltRounds = 10;
 
 module.exports = function(app) {
-  // Routes for the Users Table
-
   app.get("/users/login",function(req,res){
       res.render("partials/login")
   })
 
-  // POST route for the User_names
+  // post route
   app.post("/users/register", function(req, res) {
     var userPW = req.body.password;
     var usernameInput = req.body.user_name
@@ -43,7 +40,7 @@ module.exports = function(app) {
     }
   })}});
 
-  //login page: storing and comparing username and password,and redirecting to / page after login
+  // login page
   app.post("/users/login", function(req, res) {
     var userPW = req.body.password;
     db.users.findOne({
@@ -52,7 +49,7 @@ module.exports = function(app) {
       }
     }).then(function(user) {
       if (!user) {
-        res.send("User Does not Exist")
+        res.send("User does not exist")
         res.redirect("/");
       } else {
         bcrypt.compare(userPW, user.password, function(err, result) {
